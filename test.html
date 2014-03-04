@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Chloe 30th</title>
+
+<style>
+	body {
+		background-color: black;
+
+		-webkit-perspective: 800px;
+	}
+	video {
+		float: left;
+		padding: 5px;
+
+		-webkit-transform-style: preserve-3d;
+		-webkit-transform: rotateY(-20deg);
+	}
+</style>
+</head>
+
+<body>
+
+<video src="MVI_4958s.mov" height="150"></video>
+<video src="Apple-Switch-Ad-Will-Ferrell-Parfait.mov" height="150"></video>
+<video src="MVI_4958s.mov" height="150"></video>
+<video src="IMG_9550.mp4" height="150"></video>
+<video src="MVI_4958s.mov" height="150"></video>
+<video src="Apple-Switch-Ad-Will-Ferrell-Parfait.mov" height="150"></video>
+<video src="MVI_4958s.mov" height="150"></video>
+<video src="IMG_9549.mp4" height="150"></video>
+
+<script>
+	var vids = document.querySelectorAll('video');
+
+	for (var i = vids.length - 1; i >= 0; i--) {
+		vids.item(i).volume = 0;
+		vids.item(i).loop = true;
+	};
+
+	function playAll() {
+		for (var i = vids.length - 1; i >= 0; i--) {
+			vids.item(i).play();
+		};
+	}
+
+	function pauseAll() {
+		for (var i = vids.length - 1; i >= 0; i--) {
+			vids.item(i).pause();
+		};
+	}
+</script>
+
+</body>
+
+</html>
